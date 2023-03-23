@@ -7,3 +7,46 @@ h1{
 h1 span{
     color: orange;
 }
+section{
+    display: flex;
+}
+section img{
+    width: 100%;
+      border-radius: 50%;
+}
+section .img{
+    width: 50%;
+    
+    border-radius: 50%;
+}
+section .half-width{
+    width:50% ;
+    padding-left: 2%;
+   
+}
+
+@media (max-width:600px) {
+   
+    section{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .half-width{
+     
+       margin:1rem auto;
+      
+    }
+    section .half-width{
+        width:100% ;
+       
+       
+    }
+    .order-1{
+        order: 1;
+    }
+    .order-2{
+        order: 2;
+        box-shadow: 2px 4px 6px grey,-2px -4px 6px grey;
+        text-align: center;
+    }
+}
