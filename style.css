@@ -1,52 +1,69 @@
-body{
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
 }
-h1{
-    font-size: 50px;
+h1 {
+  font-size: 50px;
 }
-h1 span{
-    color: orange;
+h1 span {
+  color: orange;
 }
-section{
-    display: flex;
+section {
+  display: flex;
 }
-section img{
-    width: 100%;
-      border-radius: 50%;
+section .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-section .img{
-    width: 50%;
-    
-    border-radius: 50%;
-}
-section .half-width{
-    width:50% ;
-    padding-left: 2%;
-   
+section img {
+  width: 400px;
+  height: 420px;
+  border-radius: 50%;
 }
 
-@media (max-width:600px) {
-   
-    section{
-        flex-direction: column;
-        padding: 1rem;
-    }
-    .half-width{
-     
-       margin:1rem auto;
-      
-    }
-    section .half-width{
-        width:100% ;
-       
-       
-    }
-    .order-1{
-        order: 1;
-    }
-    .order-2{
-        order: 2;
-        box-shadow: 2px 4px 6px grey,-2px -4px 6px grey;
-        text-align: center;
-    }
+section .half-width {
+  width: 50%;
+  padding-left: 2%;
+  border: 1px solid black;
+}
+
+.top-banner {
+  background-image: url("/image-folder/background-image-posrfolio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* responsive starts here */
+@media (max-width: 900px) {
+  section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .half-width {
+    margin: 1rem auto;
+  }
+  section .half-width {
+    width: 100%;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+    box-shadow: 2px 4px 6px grey, -2px -4px 6px grey;
+    text-align: center;
+  }
+}
+.link-button {
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(to right, orange, tomato);
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
