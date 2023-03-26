@@ -29,7 +29,7 @@ section .half-width {
 }
 
 .top-banner {
-  background-image: url("/image-folder/background-image-posrfolio.jpg");
+  background-image: url("./image-folder/background-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
